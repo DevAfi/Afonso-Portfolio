@@ -1,45 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Landing Page</title>
-        <link rel="stylesheet" href="/CSS_files/aboutCSS.css">
-        <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="headerContainer">
-            <div class="headerLogo">
-                <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Afonso Carvalho</title>
+    <link rel="stylesheet" href="/CSS_files/aboutCSS.css">
+    <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-animation" id="particles"></div>
+
+    <header class="headerContainer">
+        <div class="headerLogo">
+            <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/HTML_files/Landing.html">Home</a></li>
+                <li><a href="/HTML_files/About.html" class="currentTab">About</a></li>
+                <li><a href="/HTML_files/Projects.html">Projects</a></li>
+                <li><a href="/HTML_files/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="aboutContainer">
+            <div class="aboutHeading">
+                <h1>About Me</h1>
+                <p class="subtitle">Fighter. Coder. Problem Solver.</p>
             </div>
-            <nav>
-                <ul class="noUnderline">
-                    <li><a href="/HTML_files/Landing.html" >Home</a></li>
-                    <li><a href="/HTML_files/About.html" class="currentTab">About</a></li>
-                    <li><a href="/HTML_files/Projects.html">Projects</a></li>
-                    <li><a href="/HTML_files/Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
+            <div class="aboutContent">
+                <section class="aboutSection">
+                    <div class="sectionIcon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="sectionContent">
+                        <h2>Who I Am</h2>
+                        <p>I'm a second-year Computer Science student with a focus on data science, currently hunting for internships where I can put my skills to work. Someone once told me I could build anything I wanted and use my brain to solve problems in fast, high-pressure situations. That idea stuck with me.</p>
+                        <p>I approach problems from abstract angles that sometimes bewilder people—I think differently, and I've learned to lean into that. Whether it's optimizing an algorithm my classmates were using by implementing a dictionary-based solution, or finding unconventional ways to tackle coding challenges, I thrive on making things work in ways others might not consider.</p>
+                    </div>
+                </section>
 
-        <main>
-        </main>
+                <section class="aboutSection">
+                    <div class="sectionIcon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="sectionContent">
+                        <h2>What Drives Me</h2>
+                        <p>I'm drawn to data—specifically, insights about performance, patterns, and optimization. There's something deeply satisfying about making complex data visual and actionable. Mathematics has always clicked for me, and data visualization is where creativity meets analytical thinking.</p>
+                        <p>My current project, IronLedger, is a workout tracker that's honestly kicking my ass. Every day brings new problems to solve and features to implement. The first version? Completely scrapped after weeks of work because the systems I planned to use shut down. That was brutal. But I rebuilt it with a sharper focus: progressive overload tracking with achievements and awards that actually motivate users to push harder.</p>
+                    </div>
+                </section>
 
+                <section class="aboutSection">
+                    <div class="sectionIcon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="sectionContent">
+                        <h2>Beyond The Code</h2>
+                        <p>I box competitively. This year, I'm aiming for my first sanctioned amateur bout, with plans to turn pro after around 20 amateur fights. Every week, I show up to get hammered by guys stronger than me. I spar between gyms, seeking out tougher opponents because that's where growth happens.</p>
+                        <p>The discipline required to step into the ring with someone better than you—again and again—translates directly to how I code. It's the same mentality: show up, get punched in the face by problems harder than you, learn, adapt, come back stronger.</p>
+                        <p>That intensity is both a strength and a weakness. When I hit a coding problem I can't solve immediately, I become obsessed. It's all I think about. I know stepping back and relaxing would probably help more, but there's something about the relentless pursuit of a solution that drives me.</p>
+                    </div>
+                </section>
 
+                <section class="aboutSection">
+                    <div class="sectionIcon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="sectionContent">
+                        <h2>Where I'm Headed</h2>
+                        <p>In 2-3 years, I see myself in a stable software or data analysis role, doing what I love most: working with data, finding patterns, and building visualizations that tell compelling stories. I'm actively sharpening my skills through LeetCode and coding challenges that keep me thinking creatively under pressure.</p>
+                        <p>I bring a diverse perspective to everything I do—I can detach myself and view problems from any angle. Whether it's finding an edge case in code or strategizing in the ring, I approach challenges from multiple viewpoints until something clicks.</p>
+                    </div>
+                </section>
 
-
-        <footer class="footerContainer">
-            <div class="moreLinks">
-                    <a href="https://www.github.com/DevAfi"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <section class="techStack">
+                    <h2>Technical Skills</h2>
+                    <div class="skillsGrid">
+                        <div class="skillCategory">
+                            <h3><i class="fas fa-laptop-code"></i> Languages</h3>
+                            <div class="skillTags">
+                                <span class="skillTag">JavaScript</span>
+                                <span class="skillTag">TypeScript</span>
+                                <span class="skillTag">Python</span>
+                                <span class="skillTag">Java</span>
+                                <span class="skillTag">HTML/CSS</span>
+                                <span class="skillTag">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skillCategory">
+                            <h3><i class="fas fa-tools"></i> Technologies</h3>
+                            <div class="skillTags">
+                                <span class="skillTag">React Native</span>
+                                <span class="skillTag">React</span>
+                                <span class="skillTag">Node.js</span>
+                                <span class="skillTag">Git</span>
+                            </div>
+                        </div>
+                        <div class="skillCategory">
+                            <h3><i class="fas fa-chart-line"></i> Focus Areas</h3>
+                            <div class="skillTags">
+                                <span class="skillTag">Data Analysis</span>
+                                <span class="skillTag">Data Visualization</span>
+                                <span class="skillTag">Algorithm Optimization</span>
+                                <span class="skillTag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="footerRightCon">
-                <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
-            </div>
-            
-        </footer>
-    </body>
+        </div>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="moreLinks">
+            <a href="https://www.github.com/DevAfi"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="footerRightCon">
+            <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/JS_files/about.js"></script>
+</body>
 </html>
