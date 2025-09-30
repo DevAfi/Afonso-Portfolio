@@ -1,45 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Landing Page</title>
-        <link rel="stylesheet" href="/CSS_files/aboutCSS.css">
-        <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="headerContainer">
-            <div class="headerLogo">
-                <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Afonso Carvalho</title>
+    <link rel="stylesheet" href="/CSS_files/contactCSS.css">
+    <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-animation" id="particles"></div>
+
+    <header class="headerContainer">
+        <div class="headerLogo">
+            <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/HTML_files/Landing.html">Home</a></li>
+                <li><a href="/HTML_files/About.html">About</a></li>
+                <li><a href="/HTML_files/Projects.html">Projects</a></li>
+                <li><a href="/HTML_files/Contact.html" class="currentTab">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contactContainer">
+            <div class="contactHeading">
+                <h1>Get In Touch</h1>
+                <p>Have a question or want to work together? I'd love to hear from you!</p>
             </div>
-            <nav>
-                <ul class="noUnderline">
-                    <li><a href="/HTML_files/Landing.html" >Home</a></li>
-                    <li><a href="/HTML_files/About.html" >About</a></li>
-                    <li><a href="/HTML_files/Projects.html">Projects</a></li>
-                    <li><a href="/HTML_files/Contact.html" class="currentTab">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
+            <div class="contactContent">
+                <div class="contactInfo">
+                    <div class="infoCard">
+                        <div class="iconWrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:afonsomiguelcarvalho2006@gmail.com">afonsomiguelcarvalho2006@gmail.com</a>
+                    </div>
 
-        <main>
-        </main>
+                    <div class="infoCard">
+                        <div class="iconWrapper">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/" target="_blank">Connect with me</a>
+                    </div>
 
+                    <div class="infoCard">
+                        <div class="iconWrapper">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/DevAfi" target="_blank">@DevAfi</a>
+                    </div>
 
+                    <div class="infoCard">
+                        <div class="iconWrapper">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <a href="https://www.instagram.com/fonzi.scheming/" target="_blank">@fonzi.scheming</a>
+                    </div>
+                </div>
 
+                <div class="contactForm">
+                    <form id="contactFormElement">
+                        <div class="formGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
 
-        <footer class="footerContainer">
-            <div class="moreLinks">
-                    <a href="https://www.github.com/DevAfi"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <div class="formGroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submitBtn">
+                            <span class="btnText">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="footerRightCon">
-                <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
-            </div>
-            
-        </footer>
-    </body>
+        </div>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="moreLinks">
+            <a href="https://www.github.com/DevAfi"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="footerRightCon">
+            <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/JS_files/contact.js"></script>
+</body>
 </html>
