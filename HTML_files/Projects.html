@@ -1,146 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Landing Page</title>
-        <link rel="stylesheet" href="/CSS_files/projectsCSS.css">
-        <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="headerContainer">
-            <div class="headerLogo">
-                <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
-            </div>
-            <nav>
-                <ul class="noUnderline">
-                    <li><a href="/HTML_files/Landing.html" >Home</a></li>
-                    <li><a href="/HTML_files/About.html" >About</a></li>
-                    <li><a href="/HTML_files/Projects.html" class="currentTab">Projects</a></li>
-                    <li><a href="/HTML_files/Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Afonso Carvalho</title>
+  <link rel="stylesheet" href="/CSS_files/projectsCSS.css">
+  <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="headerContainer">
+    <div class="headerLogo">
+      <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/HTML_files/Landing.html">Home</a></li>
+        <li><a href="/HTML_files/About.html">About</a></li>
+        <li><a href="/HTML_files/Projects.html" class="currentTab">Projects</a></li>
+        <li><a href="/HTML_files/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="mainHeading">
+      <h1>My Projects</h1>
+      <p>Explore some of the things I’ve been building.</p>
+    </div>
+
+    <div class="filterBar">
+      <button class="filterBtn active" data-filter="all">All</button>
+      <button class="filterBtn" data-filter="HTML">HTML</button>
+      <button class="filterBtn" data-filter="JavaScript">JavaScript</button>
+      <button class="filterBtn" data-filter="Python">Python</button>
+    </div>
+
+    <div class="cardContainer">
+      <div class="projectCard" data-tags="HTML CSS JavaScript">
+        <img src="/Pictures/YEFC1.jpg" alt="Banking website preview">
+        <div class="projectContent">
+          <h3>Banking Website</h3>
+          <div class="projectMetaTags">
+            <span class="projectLabel">HTML</span>
+            <span class="projectLabel">CSS</span>
+            <span class="projectLabel">JavaScript</span>
+          </div>
+          <p>A responsive bank website with a working mortgage calculator for real-time user interaction.</p>
+        </div>
+        <div class="projectLinks">
+          <a href="https://github.com/DevAfi/Banking_website" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="projectCard" data-tags="HTML CSS JavaScript">
+        <img src="/Pictures/YEFC1.jpg" alt="To-Do List preview">
+        <div class="projectContent">
+          <h3>To-Do List</h3>
+          <div class="projectMetaTags">
+            <span class="projectLabel">HTML</span>
+            <span class="projectLabel">CSS</span>
+            <span class="projectLabel">JavaScript</span>
+          </div>
+          <p>A To-Do List app with local storage to save tasks persistently.</p>
+        </div>
+        <div class="projectLinks">
+          <a href="https://github.com/DevAfi/ToDo-List" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="projectCard" data-tags="Python Java React">
+        <img src="/Pictures/emoji reaction1.jpeg" alt="Project preview">
+        <div class="projectContent">
+          <h3>Project Title</h3>
+          <div class="projectMetaTags">
+            <span class="projectLabel">Python</span>
+            <span class="projectLabel">Java</span>
+            <span class="projectLabel">React</span>
+          </div>
+          <p>Project description goes here. A brief overview of what the project is about, its features, and its purpose.</p>
+        </div>
+        <div class="projectLinks">
+          <a href="https://github.com/DevAfi/Banking-Website" target="_blank">GitHub</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
-        <main>
-            <div class="mainHeading">
-                <h1>Projects</h1>
-            </div>
-                <div class="cardContainer">
-                    <div class="stackableCards">
-                        <div class="projectCard">
-                            <img class="projectImg" src="/Pictures/YEFC1.jpg" alt="bank website image">
-                            <div class="projectContent">
-                                <div class="projectHeader">
-                                    <h3>Banking website</h3>
-                                </div>
-                                <div class="projectMetaTags">
-                                    <div class="projectLabel">HTML</div>
-                                    <div class="projectLabel">CSS</div>
-                                    <div class="projectLabel">JavaScript</div>
-                                </div>
-                                <div class="projectDescription">
-                                    <p>A responsive bank website with a working mortgage calculator for real-time user interaction </p>
-                                </div>
-                            </div>
-                            <div class="projectLinks">
-                                <div class="fluidButtons">
-                                    <a href="https://github.com/DevAfi/Banking_website" role="button" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
+  <footer class="footerContainer">
+    <div class="moreLinks">
+      <a href="https://github.com/DevAfi"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
+  </footer>
 
-                        <div class="projectCard">
-                            <img class="projectImg" src="/Pictures/YEFC1.jpg" alt="bank website image">
-                            <div class="projectContent">
-                                <div class="projectHeader">
-                                    <h3>To-Do List</h3>
-                                </div>
-                                <div class="projectMetaTags">
-                                    <div class="projectLabel">HTML</div>
-                                    <div class="projectLabel">CSS</div>
-                                    <div class="projectLabel">JavaScript</div>
-                                </div>
-                                <div class="projectDescription">
-                                    <p>A standard To-Do List application built with HTML, CSS, and JavaScript featuring a list that is saved locally.</p>
-                                </div>
-                            </div>
-                            <div class="projectLinks">
-                                <div class="fluidButtons">
-                                    <a href="https://github.com/DevAfi/ToDo-List" role="button" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="projectCard">
-                            <img class="projectImg" src="/Pictures/emoji reaction1.jpeg" alt="bank website image">
-                            <div class="projectContent">
-                                <div class="projectHeader">
-                                    <h3>Project Title</h3>
-                                </div>
-                                <div class="projectMetaTags">
-                                    <div class="projectLabel">Python</div>
-                                    <div class="projectLabel">Skibidi</div>
-                                    <div class="projectLabel">Java</div>
-                                    <div class="projectLabel">React</div>
-                                </div>
-                                <div class="projectDescription">
-                                    <p>Project description goes here. This is a brief overview of what the project is about, its features, and its purpose.</p>
-                                </div>
-                            </div>
-                            <div class="projectLinks">
-                                <div class="fluidButtons">
-                                    <a href="github.com/DevAfi/Banking-Website" role="button">GitHub</a>
-                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button">YouTube</a>
-                                    <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/" role="button">LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                            <div class="projectCard">
-                            <img class="projectImg" src="/Pictures/TVFC1.png" alt="bank website image">
-                            <div class="projectContent">
-                                <div class="projectHeader">
-                                    <h3>Project Title</h3>
-                                </div>
-                                <div class="projectMetaTags">
-                                    <div class="projectLabel">Python</div>
-                                    <div class="projectLabel">Skibidi</div>
-                                    <div class="projectLabel">Java</div>
-                                    <div class="projectLabel">React</div>
-                                </div>
-                                <div class="projectDescription">
-                                    <p>Project description goes here. This is a brief overview of what the project is about, its features, and its purpose.</p>
-                                </div>
-                            </div>
-                            <div class="projectLinks">
-                                <div class="fluidButtons">
-                                    <a href="github.com/DevAfi/Banking-Website" role="button">GitHub</a>
-                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button">YouTube</a>
-                                    <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/" role="button">LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </main>
-
-
-
-
-        <footer class="footerContainer">
-            <div class="moreLinks">
-                    <a href="github.com/DevAfi"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-            <div class="footerRightCon">
-                <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
-            </div>
-            
-        </footer>
-    </body>
+  <script src="/JS_files/projects.js"></script>
+</body>
 </html>
