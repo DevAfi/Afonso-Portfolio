@@ -8,6 +8,8 @@
   <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="bg-animation" id="particles"></div>
+
   <header class="headerContainer">
     <div class="headerLogo">
       <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
@@ -25,7 +27,7 @@
   <main>
     <div class="mainHeading">
       <h1>My Projects</h1>
-      <p>Explore some of the things I’ve been building.</p>
+      <p>Explore some of the things I've been building.</p>
     </div>
 
     <div class="filterBar">
@@ -33,6 +35,7 @@
       <button class="filterBtn" data-filter="HTML">HTML</button>
       <button class="filterBtn" data-filter="JavaScript">JavaScript</button>
       <button class="filterBtn" data-filter="Python">Python</button>
+      <button class="filterBtn" data-filter="React-native">React Native</button>
     </div>
 
     <div class="cardContainer">
@@ -48,7 +51,9 @@
           <p>A responsive bank website with a working mortgage calculator for real-time user interaction.</p>
         </div>
         <div class="projectLinks">
-          <a href="https://github.com/DevAfi/Banking_website" target="_blank">GitHub</a>
+          <a href="https://github.com/DevAfi/Banking_website" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
 
@@ -64,29 +69,53 @@
           <p>A To-Do List app with local storage to save tasks persistently.</p>
         </div>
         <div class="projectLinks">
-          <a href="https://github.com/DevAfi/ToDo-List" target="_blank">GitHub</a>
+          <a href="https://github.com/DevAfi/ToDo-List" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="projectCard" data-tags="Javascript Typescript React-native SQL">
+        <img src="/Pictures/emoji reaction1.jpeg" alt="IronLedger preview">
+        <div class="projectContent">
+          <h3>IronLedger</h3>
+          <div class="projectMetaTags">
+            <span class="projectLabel">Javascript</span>
+            <span class="projectLabel">Typescript</span>
+            <span class="projectLabel">React-native</span>
+            <span class="projectLabel">SQL</span>
+          </div>
+          <p>A comprehensive financial tracking application built with React Native, featuring real-time data synchronization and intuitive expense management.</p>
+        </div>
+        <div class="projectLinks">
+          <a href="https://github.com/DevAfi/IronLedger" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
 
       <div class="projectCard" data-tags="Python Java React">
         <img src="/Pictures/emoji reaction1.jpeg" alt="Project preview">
         <div class="projectContent">
-          <h3>Project Title</h3>
+          <h3>Advanced Data Analyzer</h3>
           <div class="projectMetaTags">
             <span class="projectLabel">Python</span>
             <span class="projectLabel">Java</span>
             <span class="projectLabel">React</span>
           </div>
-          <p>Project description goes here. A brief overview of what the project is about, its features, and its purpose.</p>
+          <p>A powerful data analysis tool that processes large datasets and provides insightful visualizations using modern web technologies.</p>
         </div>
         <div class="projectLinks">
-          <a href="https://github.com/DevAfi/Banking-Website" target="_blank">GitHub</a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YouTube</a>
+          <a href="https://github.com/DevAfi" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-youtube"></i> Demo
+          </a>
         </div>
       </div>
     </div>
   </main>
-
 
   <footer class="footerContainer">
     <div class="moreLinks">
