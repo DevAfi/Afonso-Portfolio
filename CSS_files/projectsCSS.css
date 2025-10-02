@@ -6,12 +6,11 @@
 
 body {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #f1faee;
   min-height: 100vh;
   overflow-x: hidden;
 }
-
 
 .bg-animation {
   position: fixed;
@@ -31,8 +30,15 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
-  50% { transform: translate(50px, -50px) scale(1.2); opacity: 0.6; }
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(50px, -50px) scale(1.2);
+    opacity: 0.6;
+  }
 }
 
 .headerContainer {
@@ -79,7 +85,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -105,8 +111,6 @@ nav ul li a:hover {
   color: #219ebc !important;
   font-weight: 600;
 }
-
-
 
 main {
   position: relative;
@@ -280,7 +284,6 @@ main {
   box-shadow: 0 4px 15px rgba(33, 158, 188, 0.4);
 }
 
-
 .footerContainer {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -348,5 +351,55 @@ main {
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
+  }
+}
+
+/*  Slideshow css   */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
