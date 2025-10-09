@@ -38,10 +38,17 @@ filterBtns.forEach((btn) => {
   });
 });
 
-let slideIndex = [1, 1];
-let slideId = ["mySlides1", "mySlides2"];
+// slideshow functionality
+// to add a slideshow:
+//
+// add 1 to slideIndex, add Id to slideId, add showSlides(1, no) to the end of the function
+
+let slideIndex = [1, 1, 1, 1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
