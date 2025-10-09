@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Afonso Carvalho</title>
+    <title>About | Afonso Carvalho - Web Developer & Data Analyst</title>
+    <meta name="description" content="Learn about Afonso Carvalho, a passionate Computer Science student who combines coding with competitive boxing. Discover his journey in web development, data analysis, and problem-solving.">
+    <meta name="keywords" content="Afonso Carvalho, about, computer science student, web developer, data analyst, boxing, portfolio, programming journey">
+    <meta name="author" content="Afonso Carvalho">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afonsocarvalho.dev/about">
+    <meta property="og:title" content="About | Afonso Carvalho - Web Developer & Data Analyst">
+    <meta property="og:description" content="Learn about Afonso Carvalho's journey in Computer Science, from coding challenges to competitive boxing. Discover what drives this passionate developer.">
+    <meta property="og:image" content="https://afonsocarvalho.dev/Pictures/emoji reaction1.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://afonsocarvalho.dev/about">
+    <meta property="twitter:title" content="About | Afonso Carvalho - Web Developer & Data Analyst">
+    <meta property="twitter:description" content="Learn about Afonso Carvalho's journey in Computer Science, from coding challenges to competitive boxing. Discover what drives this passionate developer.">
+    <meta property="twitter:image" content="https://afonsocarvalho.dev/Pictures/emoji reaction1.jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS_files/aboutCSS.css">
     <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +33,7 @@
 
     <header class="headerContainer">
         <div class="headerLogo">
-            <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+            <img src="/Pictures/emoji reaction1.jpeg" alt="Afonso Carvalho Logo">
         </div>
         <nav>
             <ul>
@@ -22,6 +43,11 @@
                 <li><a href="/HTML_files/Contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="theme-toggle">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </header>
 
     <main>
@@ -117,15 +143,20 @@
 
     <footer class="footerContainer">
         <div class="moreLinks">
-            <a href="https://www.github.com/DevAfi"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.github.com/DevAfi" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fonzi.scheming/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:afonsomiguelcarvalho2006@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="footerRightCon">
             <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="/JS_files/about.js"></script>
 </body>

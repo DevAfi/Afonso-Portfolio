@@ -3,16 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Afonso Carvalho</title>
+    <title>Contact | Afonso Carvalho - Web Developer & Data Analyst</title>
+    <meta name="description" content="Get in touch with Afonso Carvalho, a passionate Computer Science student specializing in web development and data analysis. Available for internships and collaborations.">
+    <meta name="keywords" content="Afonso Carvalho, web developer, data analyst, computer science student, portfolio, contact">
+    <meta name="author" content="Afonso Carvalho">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afonsocarvalho.dev/contact">
+    <meta property="og:title" content="Contact | Afonso Carvalho - Web Developer & Data Analyst">
+    <meta property="og:description" content="Get in touch with Afonso Carvalho, a passionate Computer Science student specializing in web development and data analysis.">
+    <meta property="og:image" content="https://afonsocarvalho.dev/Pictures/emoji reaction1.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://afonsocarvalho.dev/contact">
+    <meta property="twitter:title" content="Contact | Afonso Carvalho - Web Developer & Data Analyst">
+    <meta property="twitter:description" content="Get in touch with Afonso Carvalho, a passionate Computer Science student specializing in web development and data analysis.">
+    <meta property="twitter:image" content="https://afonsocarvalho.dev/Pictures/emoji reaction1.jpeg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Afonso Carvalho",
+        "jobTitle": "Computer Science Student",
+        "description": "Passionate web developer and data analyst specializing in React, Python, and data visualization",
+        "email": "afonsomiguelcarvalho2006@gmail.com",
+        "url": "https://afonsocarvalho.dev",
+        "sameAs": [
+            "https://github.com/DevAfi",
+            "https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/",
+            "https://www.instagram.com/fonzi.scheming/"
+        ],
+        "knowsAbout": ["Web Development", "Data Analysis", "Python", "JavaScript", "React", "Machine Learning"]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS_files/contactCSS.css">
     <script src="https://kit.fontawesome.com/9ea9e92632.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div class="bg-animation" id="particles"></div>
 
     <header class="headerContainer">
         <div class="headerLogo">
-            <img src="/Pictures/emoji reaction1.jpeg" alt="Logo Image">
+            <img src="/Pictures/emoji reaction1.jpeg" alt="Afonso Carvalho Logo">
         </div>
         <nav>
             <ul>
@@ -22,6 +63,11 @@
                 <li><a href="/HTML_files/Contact.html" class="currentTab">Contact</a></li>
             </ul>
         </nav>
+        <div class="theme-toggle">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </header>
 
     <main>
@@ -64,9 +110,27 @@
                         <h3>Instagram</h3>
                         <a href="https://www.instagram.com/fonzi.scheming/" target="_blank">@fonzi.scheming</a>
                     </div>
+
+                    <div class="infoCard cv-card">
+                        <div class="iconWrapper">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Resume</h3>
+                        <button class="downloadBtn" onclick="downloadCV()">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </button>
+                    </div>
                 </div>
 
                 <div class="contactForm">
+                    <div id="messageDisplay" class="message-display" style="display: none;">
+                        <div class="message-content">
+                            <i class="message-icon"></i>
+                            <span class="message-text"></span>
+                        </div>
+                    </div>
+                    
                     <form id="contactFormElement">
                         <div class="formGroup">
                             <label for="name">Name</label>
@@ -100,13 +164,18 @@
 
     <footer class="footerContainer">
         <div class="moreLinks">
-            <a href="https://github.com/DevAfi"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/fonzi.scheming/"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:afonsomiguelcarvalho2006@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/DevAfi" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fonzi.scheming/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:afonsomiguelcarvalho2006@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="/JS_files/contact.js"></script>
 </body>
