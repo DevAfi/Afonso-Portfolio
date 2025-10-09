@@ -28,9 +28,7 @@ body {
   position: absolute;
   background: rgba(33, 158, 188, 0.3);
   border-radius: 15px;
-  padding: 1.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
+  animation: float 20s infinite ease-in-out;
 }
 
 .infoCard:hover {
@@ -184,9 +182,10 @@ body {
   transform: translateY(-3px) scale(1.2);
 }
 
-.footerRightCon p {
+.footerContainer p {
   font-size: 0.95rem;
   color: rgba(241, 250, 238, 0.7);
+  margin: 0;
 }
 
 
@@ -232,13 +231,6 @@ body {
     text-align: center;
     padding: 2rem 1rem;
   }
-}
-
-.particle {
-  position: absolute;
-  background: rgba(33, 158, 188, 0.3);
-  border-radius: 15px;
-  animation: float 20s infinite ease-in-out;
 }
 
 @keyframes float {
@@ -365,6 +357,7 @@ main {
   grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
   margin-top: 3rem;
+  align-items: start;
 }
 
 .contactInfo {
@@ -378,4 +371,7 @@ main {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
 }
