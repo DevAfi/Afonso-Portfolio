@@ -34,11 +34,20 @@ document.addEventListener('DOMContentLoaded', function() {
       const filter = btn.dataset.filter;
       projectCards.forEach((card) => {
         const tags = card.dataset.tags.toLowerCase().split(" ");
+        const filterLower = filter.toLowerCase();
 
-        if (filter === "all" || tags.includes(filter.toLowerCase())) {
+        // Check for exact match or partial match
+        const matches = filter === "all" || 
+                      tags.includes(filterLower) || 
+                      tags.some(tag => tag.includes(filterLower)) ||
+                      filterLower.includes(tags.join(" "));
+
+        if (matches) {
           card.classList.remove("hidden");
+          card.style.display = "block";
         } else {
           card.classList.add("hidden");
+          card.style.display = "none";
         }
       });
     });
@@ -184,8 +193,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const description = card.querySelector('p').textContent.toLowerCase();
         
         if (title.includes(searchTerm) || description.includes(searchTerm)) {
+          card.classList.remove('hidden');
           card.style.display = 'block';
         } else {
+          card.classList.add('hidden');
           card.style.display = 'none';
         }
       });
