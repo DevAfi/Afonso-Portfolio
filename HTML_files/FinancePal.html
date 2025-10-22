@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinancePal - Advanced Personal Finance Tracker | Afonso Carvalho - Portfolio</title>
+    <meta name="description" content="Explore Afonso Carvalho's FinancePal project - a sophisticated personal finance management application with advanced analytics, financial health scoring, and dynamic visualizations built with vanilla JavaScript and Chart.js.">
+    <meta name="keywords" content="Afonso Carvalho, FinancePal, personal finance, JavaScript, Chart.js, analytics, budget management, financial health, responsive design, glassmorphism">
+    <meta name="author" content="Afonso Carvalho">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afonsocarvalho.dev/financepal">
+    <meta property="og:title" content="FinancePal - Advanced Personal Finance Tracker | Afonso Carvalho">
+    <meta property="og:description" content="A sophisticated personal finance management application with advanced analytics, financial health scoring, and dynamic visualizations built with vanilla JavaScript and Chart.js.">
+    <meta property="og:image" content="https://afonsocarvalho.dev/Pictures/emoji reaction1.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://afonsocarvalho.dev/financepal">
+    <meta property="twitter:title" content="FinancePal - Advanced Personal Finance Tracker | Afonso Carvalho">
+    <meta property="twitter:description" content="A sophisticated personal finance management application with advanced analytics, financial health scoring, and dynamic visualizations built with vanilla JavaScript and Chart.js.">
+    <meta property="twitter:image" content="https://afonsocarvalho.dev/Pictures/emoji reaction1.jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS_files/projectsCSS.css" />
+    <script
+      src="https://kit.fontawesome.com/9ea9e92632.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="bg-animation" id="particles"></div>
+
+    <header class="headerContainer">
+      <div class="headerLogo">
+        <img src="../Pictures/emoji reaction1.jpeg" alt="Afonso Carvalho Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Landing.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="project-detail-container">
+        <!-- Project Header -->
+        <div class="project-header">
+          <div class="project-title-section">
+            <h1>💰 FinancePal - Advanced Personal Finance Tracker</h1>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="projectLabel">JavaScript</span>
+                <span class="projectLabel">Chart.js</span>
+                <span class="projectLabel">CSS Grid</span>
+                <span class="projectLabel">LocalStorage</span>
+                <span class="projectLabel">Analytics</span>
+                <span class="projectLabel">Responsive</span>
+              </div>
+              <div class="project-links-header">
+                <a href="https://github.com/DevAfi/FinancePal" target="_blank" class="btn btn-primary">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="Projects.html" class="btn btn-secondary">
+                  <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Screenshots -->
+        <div class="project-screenshots">
+          <h2>Project Screenshots</h2>
+          <div class="screenshots-grid">
+            <div class="screenshot-placeholder">
+              <i class="fas fa-chart-line"></i>
+              <p>Main Dashboard with Financial Health Score</p>
+            </div>
+            <div class="screenshot-placeholder">
+              <i class="fas fa-chart-pie"></i>
+              <p>Analytics Dashboard with Interactive Charts</p>
+            </div>
+            <div class="screenshot-placeholder">
+              <i class="fas fa-wallet"></i>
+              <p>Budget Management Interface</p>
+            </div>
+            <div class="screenshot-placeholder">
+              <i class="fas fa-plus-circle"></i>
+              <p>Smart Transaction Entry Form</p>
+            </div>
+            <div class="screenshot-placeholder">
+              <i class="fas fa-mobile-alt"></i>
+              <p>Mobile Responsive Views</p>
+            </div>
+            <div class="screenshot-placeholder">
+              <i class="fas fa-download"></i>
+              <p>Data Export Functionality</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="project-description">
+          <h2>About This Project</h2>
+          <p>
+            FinancePal is a sophisticated, feature-rich personal finance management application that demonstrates 
+            advanced frontend development skills with comprehensive analytics and dynamic visualizations. This 
+            portfolio-ready project showcases expertise in vanilla JavaScript, data visualization, and modern 
+            responsive design principles.
+          </p>
+          
+          <h3>Key Features</h3>
+          <ul class="feature-list">
+            <li><strong>Smart Transaction Entry:</strong> Add income/expenses with categories, dates, and automatic categorization</li>
+            <li><strong>Persistent Local Storage:</strong> All data saved locally with automatic backup and recovery</li>
+            <li><strong>Real-time Updates:</strong> Instant balance calculations and visual updates across all components</li>
+            <li><strong>Data Export:</strong> Export transactions to CSV and JSON formats for external analysis</li>
+            <li><strong>Advanced Analytics Dashboard:</strong> Comprehensive financial insights with interactive charts</li>
+            <li><strong>Financial Health Score:</strong> AI-powered scoring system (0-100 scale) with detailed metrics</li>
+            <li><strong>Smart Budget Management:</strong> Set category budgets with progress tracking and intelligent alerts</li>
+            <li><strong>Premium User Experience:</strong> Dynamic backgrounds, custom cursor effects, and glassmorphism design</li>
+            <li><strong>Fully Responsive:</strong> Optimized for all devices with mobile-first approach</li>
+          </ul>
+        </div>
+
+        <!-- Technical Implementation -->
+        <div class="technical-implementation">
+          <h2>Technical Implementation</h2>
+          
+          <div class="tech-section">
+            <h3>🎯 Financial Health Scoring Algorithm</h3>
+            <p>
+              The sophisticated scoring system evaluates financial health across multiple dimensions:
+            </p>
+            <ul>
+              <li><strong>Savings Rate (40 points):</strong> Income vs expenses ratio calculation</li>
+              <li><strong>Expense Stability (30 points):</strong> Consistency analysis of monthly spending patterns</li>
+              <li><strong>Category Balance (30 points):</strong> Diversification assessment of expense categories</li>
+              <li><strong>Health Metrics:</strong> Excellent (80-100), Good (60-79), Fair (40-59), Poor (0-39)</li>
+            </ul>
+          </div>
+
+          <div class="tech-section">
+            <h3>🏗️ Project Structure</h3>
+            <div class="code-block">
+              <pre><code>FinancePal/
+├── index.html              # Main application entry point
+├── style.css               # Advanced CSS with animations & responsive design
+├── script.js               # Modular JavaScript with analytics engine
+└── Chart.js                # Data visualization library integration
+
+Key Modules:
+├── TransactionManager      # Add, edit, delete transactions
+├── AnalyticsEngine         # Financial health scoring & insights
+├── BudgetManager           # Category budget tracking
+├── DataExporter           # CSV/JSON export functionality
+├── ChartRenderer          # Dynamic chart generation
+└── StorageManager         # LocalStorage persistence</code></pre>
+            </div>
+          </div>
+
+          <div class="tech-section">
+            <h3>🛠️ Technology Stack</h3>
+            <div class="tech-grid">
+              <div class="tech-item">
+                <i class="fab fa-js-square"></i>
+                <h4>Vanilla JavaScript</h4>
+                <p>ES6+ with modular architecture</p>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-chart-bar"></i>
+                <h4>Chart.js</h4>
+                <p>Professional data visualizations</p>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-th"></i>
+                <h4>CSS Grid & Flexbox</h4>
+                <p>Advanced layout systems</p>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <h4>LocalStorage API</h4>
+                <p>Client-side data persistence</p>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-magic"></i>
+                <h4>CSS Animations</h4>
+                <p>Hardware-accelerated transitions</p>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Responsive Design</h4>
+                <p>Mobile-first approach</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage Instructions -->
+        <div class="usage-instructions">
+          <h2>Getting Started</h2>
+          
+          <div class="instruction-section">
+            <h3>Live Demo</h3>
+            <p>
+              Experience FinancePal directly in your browser with the live demo. The application 
+              demonstrates all features including transaction management, analytics, and budget tracking.
+            </p>
+            <div class="code-block">
+              <pre><code>🌐 Live Demo: https://financepalapp.netlify.app
+📱 Mobile Optimized: Perfect experience on all devices
+💾 Local Storage: All data persists between sessions
+📊 Real-time Analytics: Instant updates and insights</code></pre>
+            </div>
+          </div>
+
+          <div class="instruction-section">
+            <h3>Core Functionality</h3>
+            <ul>
+              <li><strong>Transaction Management:</strong> Add income and expenses with smart categorization</li>
+              <li><strong>Financial Analytics:</strong> Comprehensive dashboard with health scoring</li>
+              <li><strong>Budget Tracking:</strong> Set and monitor category-specific spending limits</li>
+              <li><strong>Data Export:</strong> Export your financial data for external analysis</li>
+              <li><strong>Responsive Design:</strong> Seamless experience across all devices</li>
+            </ul>
+          </div>
+
+          <div class="instruction-section">
+            <h3>Advanced Features</h3>
+            <ul>
+              <li><strong>Dynamic Backgrounds:</strong> Animated gradient mesh with floating particles</li>
+              <li><strong>Custom Cursor:</strong> Interactive cursor effects with smooth trailing</li>
+              <li><strong>Glassmorphism Design:</strong> Modern blur effects and transparency</li>
+              <li><strong>Smart Alerts:</strong> Budget notifications at 80% and 100% usage</li>
+              <li><strong>Performance Optimization:</strong> Disabled heavy effects on mobile for battery life</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Design Philosophy -->
+        <div class="design-philosophy">
+          <h2>Design Philosophy</h2>
+          
+          <div class="design-grid">
+            <div class="design-item">
+              <i class="fas fa-palette"></i>
+              <h3>Visual Design</h3>
+              <p>Dark theme with premium feel, glassmorphism effects, and strategic color psychology for financial data visualization</p>
+            </div>
+            <div class="design-item">
+              <i class="fas fa-user-friends"></i>
+              <h3>User Experience</h3>
+              <p>Intuitive navigation with clear information hierarchy, fast interactions with immediate feedback</p>
+            </div>
+            <div class="design-item">
+              <i class="fas fa-universal-access"></i>
+              <h3>Accessibility</h3>
+              <p>Following WCAG guidelines with proper contrast ratios and keyboard navigation support</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Enhancements -->
+        <div class="future-enhancements">
+          <h2>Potential Roadmap & Future Enhancements</h2>
+          
+          <div class="roadmap-section">
+            <h3>Phase 2: Authentication & Cloud Sync</h3>
+            <ul>
+              <li>User authentication with secure login system</li>
+              <li>Cloud synchronization across multiple devices</li>
+              <li>Encrypted data transmission and storage</li>
+            </ul>
+          </div>
+
+          <div class="roadmap-section">
+            <h3>Phase 3: Bank Integration & Advanced Features</h3>
+            <ul>
+              <li>Real bank account integration with API connections</li>
+              <li>Advanced PDF report generation and email reports</li>
+              <li>Goal setting with progress tracking and notifications</li>
+              <li>Recurring transaction scheduling and automation</li>
+            </ul>
+          </div>
+
+          <div class="roadmap-section">
+            <h3>Phase 4: AI & PWA Features</h3>
+            <ul>
+              <li>AI-powered spending predictions and insights</li>
+              <li>PWA support for offline functionality and app installation</li>
+              <li>Advanced chart types and interactive visualizations</li>
+              <li>CSV/OFX file import functionality</li>
+              <li>Multi-device real-time synchronization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footerContainer">
+      <div class="moreLinks">
+        <a href="https://github.com/DevAfi" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a
+          href="https://www.linkedin.com/in/afonso-miguel-capela-flores-de-carvalho-885074266/"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/fonzi.scheming/" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:afonsomiguelcarvalho2006@gmail.com" aria-label="Email"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <p>&copy; 2025 Afonso Carvalho. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../JS_files/projects.js"></script>
+  </body>
+</html>
