@@ -67,6 +67,7 @@
         <button class="filterBtn" data-filter="Python">Python</button>
         <button class="filterBtn" data-filter="React-Native">React/React Native</button>
         <button class="filterBtn" data-filter="AI">AI/ML</button>
+        <button class="filterBtn" data-filter="Security">Security</button>
       </div>
 
       <div class="cardContainer">
@@ -238,6 +239,55 @@
               target="_blank"
             >
               <i class="fab fa-youtube"></i> Live webapp
+            </a>
+          </div>
+        </div>
+
+        <div class="projectCard" data-tags="Python Security CLI">
+          <div class="slideshow-container">
+            <div class="mySlides5 fade">
+              <img src="../Pictures/YEFC1.jpg" style="width: 100%" alt="Password Manager CLI - Setup Screen" />
+            </div>
+            <div class="mySlides5 fade">
+              <img src="../Pictures/YEFC1.jpg" style="width: 100%" alt="Password Manager CLI - Login Screen" />
+            </div>
+            <div class="mySlides5 fade">
+              <img src="../Pictures/YEFC1.jpg" style="width: 100%" alt="Password Manager CLI - Main Menu" />
+            </div>
+            <div class="mySlides5 fade">
+              <img src="../Pictures/YEFC1.jpg" style="width: 100%" alt="Password Manager CLI - Add Password" />
+            </div>
+            <div class="mySlides5 fade">
+              <img src="../Pictures/YEFC1.jpg" style="width: 100%" alt="Password Manager CLI - Retrieve Password" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+          </div>
+
+          <div class="projectContent">
+            <h3>🔐 Secure Password Manager CLI</h3>
+            <div class="projectMetaTags">
+              <span class="projectLabel">Python</span>
+              <span class="projectLabel">Cryptography</span>
+              <span class="projectLabel">PBKDF2</span>
+              <span class="projectLabel">Fernet</span>
+              <span class="projectLabel">CLI</span>
+              <span class="projectLabel">Security</span>
+            </div>
+            <p>
+              A local-first password manager with military-grade encryption featuring master password authentication, 
+              secure password storage/retrieval, and encrypted local JSON storage. Built with PBKDF2 key derivation, 
+              Fernet encryption (AES-128 + HMAC), interactive CLI menu, attempt limiting, and secure password input. 
+              Demonstrates advanced cryptographic principles and secure software development practices.
+            </p>
+          </div>
+          <div class="projectLinks">
+            <a href="https://github.com/DevAfi/Encryption-Password-Manager" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="PasswordManager.html">
+              <i class="fas fa-info-circle"></i> Learn More
             </a>
           </div>
         </div>

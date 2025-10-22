@@ -494,3 +494,340 @@ main {
     opacity: 1;
   }
 }
+
+/* Project Detail Page Styles */
+.project-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #f1faee 0%, #219ebc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #219ebc, #1a7a91);
+  color: white;
+  border-color: #219ebc;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(33, 158, 188, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(33, 158, 188, 0.2);
+  color: var(--text-primary);
+  border-color: rgba(33, 158, 188, 0.5);
+}
+
+.btn-secondary:hover {
+  background: rgba(33, 158, 188, 0.3);
+  transform: translateY(-2px);
+}
+
+.project-screenshots {
+  margin-bottom: 3rem;
+}
+
+.project-screenshots h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #219ebc;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.screenshot-placeholder {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.screenshot-placeholder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(33, 158, 188, 0.2);
+}
+
+.screenshot-placeholder i {
+  font-size: 3rem;
+  color: #219ebc;
+  margin-bottom: 1rem;
+}
+
+.screenshot-placeholder p {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.project-description,
+.technical-implementation,
+.usage-instructions,
+.security-features,
+.future-enhancements {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+}
+
+.project-description h2,
+.technical-implementation h2,
+.usage-instructions h2,
+.security-features h2,
+.future-enhancements h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #219ebc;
+}
+
+.project-description h3,
+.technical-implementation h3,
+.usage-instructions h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.project-description p,
+.technical-implementation p,
+.usage-instructions p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.feature-list,
+.instruction-section ul,
+.roadmap-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li,
+.instruction-section li,
+.roadmap-section li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li::before,
+.instruction-section li::before,
+.roadmap-section li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #219ebc;
+  font-weight: bold;
+}
+
+.tech-section {
+  margin-bottom: 2rem;
+}
+
+.code-block {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  color: var(--text-primary);
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tech-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(33, 158, 188, 0.1);
+  border: 1px solid rgba(33, 158, 188, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  background: rgba(33, 158, 188, 0.2);
+}
+
+.tech-item i {
+  font-size: 2.5rem;
+  color: #219ebc;
+  margin-bottom: 1rem;
+}
+
+.tech-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.tech-item p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.security-item {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(33, 158, 188, 0.1);
+  border: 1px solid rgba(33, 158, 188, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.security-item:hover {
+  transform: translateY(-5px);
+  background: rgba(33, 158, 188, 0.2);
+}
+
+.security-item i {
+  font-size: 2.5rem;
+  color: #219ebc;
+  margin-bottom: 1rem;
+}
+
+.security-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.security-item p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.instruction-section {
+  margin-bottom: 2rem;
+}
+
+.roadmap-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(33, 158, 188, 0.05);
+  border-left: 4px solid #219ebc;
+  border-radius: 0 8px 8px 0;
+}
+
+.roadmap-section h3 {
+  color: #219ebc;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 1rem;
+  }
+  
+  .project-header h1 {
+    font-size: 2rem;
+  }
+  
+  .project-meta {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .project-links-header {
+    justify-content: center;
+  }
+  
+  .screenshots-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .tech-grid,
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .code-block {
+    padding: 1rem;
+  }
+  
+  .code-block pre {
+    font-size: 0.8rem;
+  }
+}
