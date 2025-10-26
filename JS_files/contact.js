@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function downloadCV() {
   // Create a temporary link element
   const link = document.createElement('a');
-  link.href = '/documents/Afonso_Carvalho_CV.pdf'; // Update this path to your actual CV file
+  link.href = '/documents/AfonsoCarvalho_CV.pdf'; // Update this path to your actual CV file
   link.download = 'Afonso_Carvalho_CV.pdf';
   link.target = '_blank';
   
