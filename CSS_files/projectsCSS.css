@@ -577,6 +577,11 @@ main {
 
 .project-screenshots {
   margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
 }
 
 .project-screenshots h2 {
@@ -586,9 +591,23 @@ main {
 }
 
 .screenshots-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
+}
+
+.screenshots-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.screenshots-grid img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(33, 158, 188, 0.3);
+  border-color: #219ebc;
 }
 
 .screenshot-placeholder {
