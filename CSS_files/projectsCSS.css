@@ -647,7 +647,8 @@ main {
 .technical-implementation,
 .usage-instructions,
 .security-features,
-.future-enhancements {
+.future-enhancements,
+.design-philosophy {
   margin-bottom: 3rem;
   padding: 2rem;
   background: var(--card-bg);
@@ -660,7 +661,8 @@ main {
 .technical-implementation h2,
 .usage-instructions h2,
 .security-features h2,
-.future-enhancements h2 {
+.future-enhancements h2,
+.design-philosophy h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #219ebc;
@@ -839,6 +841,45 @@ main {
   transition: all 0.3s ease;
 }
 
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.design-item {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(33, 158, 188, 0.1);
+  border: 1px solid rgba(33, 158, 188, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.design-item:hover {
+  transform: translateY(-5px);
+  background: rgba(33, 158, 188, 0.2);
+  box-shadow: 0 10px 25px rgba(33, 158, 188, 0.2);
+}
+
+.design-item i {
+  font-size: 2.5rem;
+  color: #219ebc;
+  margin-bottom: 1rem;
+}
+
+.design-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.design-item p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
 
 @media (max-width: 768px) {
   .project-detail-container {
@@ -863,8 +904,17 @@ main {
   }
   
   .tech-grid,
-  .security-grid {
+  .security-grid,
+  .design-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .row-pictures {
+    flex-direction: column;
+  }
+  
+  .row-pictures img {
+    width: 100%;
   }
   
   .code-block {
