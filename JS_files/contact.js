@@ -75,18 +75,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // CV Download Function
 function downloadCV() {
-  // Create a temporary link element
+  
+  console.log('CV button clicked');
+  if (window.gtag) {
+    gtag('event', 'cv_download', {
+      event_category: 'engagement',
+      event_label: 'Contact page CV'
+    });
+  }
+
   const link = document.createElement('a');
-  link.href = '/documents/AfonsoCarvalho_CV.pdf'; // Update this path to your actual CV file
+  link.href = '/documents/AfonsoCarvalho_CV.pdf';
   link.download = 'Afonso_Carvalho_CV.pdf';
   link.target = '_blank';
-  
-  // Add to DOM, click, and remove
+
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-  
-  // Show success message
+
   showMessage('CV downloaded successfully!', 'success');
 }
 
