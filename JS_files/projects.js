@@ -208,3 +208,25 @@ document.addEventListener('DOMContentLoaded', function() {
     filterBar.appendChild(searchInput);
   }
 });
+
+// Google Analytics tracking for project link clicks
+document.addEventListener('DOMContentLoaded', function() {
+  const projectCards = document.querySelectorAll('.projectCard');
+
+  projectCards.forEach(card => {
+    const titleEl = card.querySelector('.projectContent h3');
+    const projectName = titleEl ? titleEl.textContent.trim() : 'Unknown Project';
+    const links = card.querySelectorAll('.projectLinks a');
+
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.gtag) {
+          gtag('event', 'project_click', {
+            event_category: 'engagement',
+            event_label: projectName
+          });
+        }
+      });
+    });
+  });
+});

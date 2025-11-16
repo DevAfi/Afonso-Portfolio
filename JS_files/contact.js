@@ -303,3 +303,20 @@ document.addEventListener('keydown', function(e) {
     }
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contactLinks = document.querySelectorAll('[data-contact]');
+
+  contactLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      const method = this.getAttribute('data-contact');
+
+      if (window.gtag) {
+        gtag('event', 'contact_click', {
+          event_category: 'engagement',
+          event_label: method,
+        });
+      }
+    });
+  });
+});
